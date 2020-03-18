@@ -1,0 +1,20 @@
+
+.options {
+	background-color: white;
+	width: 20%;
+	height: 25%;
+	border-radius: 10px;
+	position: fixed;
+	left: 280px;
+	opacity: 80%;
+}
+
+.array-options {
+	position: relative;
+	top: -15px;
+	left: -10px;
+}
+
+.array-option {
+	display: inline-block;
+}
