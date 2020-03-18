@@ -109,6 +109,7 @@ class App extends Component {
 		        </ul>
             </div>
 
+            <ArrayContainer array={this.state.array}/>
             </body>
          );
     }
