@@ -8,7 +8,7 @@ import InsertionSort from './components/InsertionSort.js';
 import SelectionSort from './components/SelectionSort.js';
 import GenerateArrayButton from './components/GenerateArrayButton.js';
 import ShowMoreArrayOptions from './components/showMoreArrayOptions.js';
-
+import ArrayContainer from './components/ArrayContainer.js';
 
 import './App.css';
 
@@ -100,14 +100,6 @@ class App extends Component {
 	        <div>
 		        <h2>Array Size: {this.state.arraySize}</h2>
 	        </div>
-
-	        <div className='array-container'>
-		        <ul className='array'>
-		            {this.state.array.map((value, index)=> (
-		                <li className='array-element'>{value}</li>
-		            ))}
-		        </ul>
-            </div>
 
             <ArrayContainer array={this.state.array}/>
             </body>
