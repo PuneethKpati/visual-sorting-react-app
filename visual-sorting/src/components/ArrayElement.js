@@ -17,10 +17,8 @@ class ArrayElement extends Component {
     render() {
         return (
             <div>
-            	<div style={{width:"10px", height:this.height(), backgroundColor:"white"}}>
-
+            	<div style={{width:"9px", height:this.height(), backgroundColor:"white"}}>
                 </div>
-                <p>{this.props.value} </p>
             </div>
         )
     }
