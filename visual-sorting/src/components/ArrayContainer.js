@@ -8,14 +8,16 @@ class ArrayContainer extends Component {
     }
 
     componentWidth = () => {
-        return this.myInput.current.offsetWidth;
+        console.log(this.myInput.current.offsetWidth/this.props.array.length);
+        return 
     }
+
     render() {
         return (
         	<div ref={this.myInput} className="array-container" ref={this.myInput}>
                 <ul className='array'>
                     {this.props.array.map((value, index)=> (
-                        <li className='array-element'><ArrayElement value={value} width={this.componentWidth/this.props.array.length}/></li>
+                        <li className='array-element'><ArrayElement key={value.uniqueId} value={value} width={Math.floor((this.myInput.current.offsetWidth*0.8)/(this.props.array.length))}/></li>
                     ))}
                 </ul>
             </div>

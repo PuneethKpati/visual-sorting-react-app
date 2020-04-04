@@ -14,10 +14,15 @@ class ArrayElement extends Component {
     height = () => {
         return ('' + this.props.value + 'px');
     }
+
+    width = () => {
+        console.log(this.props.width)
+        return ('' + (this.props.width) + 'px')
+    }
     render() {
         return (
             <div>
-            	<div style={{width:"9px", height:this.height(), backgroundColor:"white"}}>
+            	<div style={{width:this.width(), height:this.height(), backgroundColor:"white"}}>
                 </div>
             </div>
         )
