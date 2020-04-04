@@ -97,12 +97,15 @@ class App extends Component {
 	            </div>
             )}
 
-	        <div>
+	        <div className="array-box">
 		        <h2>Array Size: {this.state.arraySize}</h2>
+            	<ArrayContainer array={this.state.array}/>
 	        </div>
 
-            <ArrayContainer array={this.state.array}/>
-            </body>
+	        </body>
+
+	        
+            
          );
     }
 
