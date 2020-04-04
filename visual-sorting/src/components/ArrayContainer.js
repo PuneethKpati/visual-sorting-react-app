@@ -10,6 +10,7 @@ class ArrayContainer extends Component {
     componentWidth = () => {
         return Math.floor(0.8*this.myInput.current.offsetWidth/this.props.array.length);
     }
+
     render() {
         return (
         	<div ref={this.myInput} className="array-container" ref={this.myInput}>
